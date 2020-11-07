@@ -52,29 +52,39 @@ var videoGallery = document.querySelector('.thumbnails')
 var galleryMary = document.querySelector('.box.input');
 var buttonMary = document.getElementById('button-mary');
 
-var playMary = document.getElementById('play-mary');
-var playTeo = document.getElementById('play-teo');
-var playDaria = document.getElementById('play-daria');
 
 
 
-playMary.addEventListener('click' , () => {
+
+// playMary.addEventListener('click' , () => {
+//     var inputMary = document.getElementById('input-mary').value;
+//    if(inputMary === 'donnacorleonne') {
+//         videoGallery.classList.remove('fading');
+//         galleryMary.classList.add('fading'); 
+//         return true;
+//     }else{
+//         alert('Ce-ai fa, te-ai perdut :)))');
+//         return false
+//     }
+// });
+
+
+function displayVideoListMary() {
     var inputMary = document.getElementById('input-mary').value;
-   if(inputMary === 'donnacorleonne') {
-        videoGallery.classList.remove('fading');
-        galleryMary.classList.add('fading'); 
-        return true;
-    }else{
-        alert('Ce-ai fa, te-ai perdut :)))');
-        return false
-    }
-});
-
+    if(inputMary === 'donnacorleonne') {
+         videoGallery.classList.remove('fading');
+         galleryMary.classList.add('fading'); 
+         return true;
+     }else{
+         alert('Ce-ai fa, te-ai perdut :)))');
+         return false
+     }
+}
 // Gallery password Teo
 
 
 
-playMary.addEventListener('click' , () => {
+function displayVideoListTeo() {
     var inputTeo = document.getElementById('input-teo').value;
    if(inputTeo === 'blackscarlett') {
         videoGallery.classList.remove('fading');
@@ -84,12 +94,12 @@ playMary.addEventListener('click' , () => {
         alert('Ce-ai fa, te-ai perdut :)))');
         return false
     }
-});
+}
 
 // Gallery password daria
 
 
-playMary.addEventListener('click' , () => {
+function displayVideoListDaria() {
     var inputDaria = document.getElementById('input-daria').value;
    if(inputDaria === 'sdm17') {
         videoGallery.classList.remove('fading');
@@ -99,7 +109,7 @@ playMary.addEventListener('click' , () => {
         alert('Ce-ai fa, te-ai perdut:)))');
         return false
     }
-});
+}
 
 
 

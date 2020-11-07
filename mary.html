@@ -11,7 +11,9 @@
 		<link rel="stylesheet" 	href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body id="mary">
-
+		<audio class="start-backround"  controls autoplay  loop  > 
+			<source src="./images/pages soundtrack.mp3" type="audio/mpeg" > 
+		</audio>
 			<!-- Banner -->
 			<!--
 				To use a video as your background, set data-video to the name of your video without
@@ -41,7 +43,7 @@
 						<div class="gallery-mary">
 							
 							<p>Password:<input type="password" id="input-mary" /></p>;
-							<a id="play-mary" target="_blank" > <i class="fas fa-play"></i> </a>
+							<a id="play-mary"	onclick="displayVideoListMary()" target="_blank" > <i class="fas fa-play"></i> </a>
 							
 						</div>
 					</div>
