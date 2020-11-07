@@ -5,12 +5,7 @@
 
 //AUDIO AUTOPLAY
 
-window.addEventListener("DOMContentLoaded", event => {
-    const audio = document.querySelector(".start-backround");
-    audio.volume = 0.2;
-    audio.play();
-    return true;
-  });
+
 
 
 
