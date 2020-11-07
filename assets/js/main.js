@@ -121,6 +121,28 @@
 		},3500)
      });
 
+	   // Upload files
+	   $('#upload-file').click(function(){
+		   $('.password-fields').animate({
+			   'opacity':'9',
+			    'right' : '0'
+		   },1700)
+	   });
+
+	
+
+         $('#button-mary').click(function(){
+		$('.gallery-mary').animate({
+			'opacity':'9',
+			 'right' : '0'
+		},2700)
+	});
+      
+	  // video password
+	  
+
+
+
 		// Scrolly.
 			$('.scrolly').scrolly();
 
