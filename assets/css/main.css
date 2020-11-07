@@ -1200,6 +1200,7 @@
 			position: relative;
 			z-index: 2;
 			height: 100vh;
+			margin-top:50px
 		}
 
 		#banner h1 {
@@ -1216,6 +1217,7 @@
 			bottom: 200px;
 			opacity: 0;
 			color:green;
+			
 		}
 	
 		.gallery{
@@ -1305,7 +1307,7 @@
  #play-mary {
 	text-decoration: none;
 	font-size: 70px;
-	color: rgb(102, 248, 17);
+	color: rgb(188, 197, 185);
 	cursor: pointer;
 }
 
@@ -1316,7 +1318,7 @@
 #play-teo {
 	text-decoration: none;
 	font-size: 70px;
-	color: rgb(102, 248, 17);
+	color:rgb(188, 197, 185);
 	cursor: pointer;
 }
 
@@ -1327,7 +1329,7 @@
 #play-daria{
 	text-decoration: none;
 	font-size: 70px;
-	color: rgb(102, 248, 17);
+	color: rgb(188, 197, 185);
 	cursor: pointer;
 }
 
@@ -1430,21 +1432,51 @@
 .profile-photo-mary {
 	background-image: url('../../moiFolder/moi\ profile.PNG');
 	
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
 }
 .profile-photo-teo{
 	background-image: url('../../moiFolder/teo-profile.jpg');
 	opacity: .7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .profile-photo-daria{
 	background-image: url('../../moiFolder/profile\ daria5.jpg');
 	
 }
-.index-photo-profile video{
-	
-    
-    
+.index-photo-profile video{	
+   
 }
 
+.start-backround{
+	display: none;
+}
+
+aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+	font-size: 50px;
+	z-index: 100;
+	color: green;
+}
+#toggle-audio{
+	color: gray;
+}
+
+.incorect-password{
+	 font-size: 25px;
+	 color: red;
+}
+
+footer video {
+	position: absolute;
+	z-index: ;
+}
 
 
 
@@ -1627,6 +1659,12 @@
 		padding: 4em 0 2em 0;
 		background-color: #1b1b1f;
 		text-align: center;
+		background: url('../../images/3witch.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		box-shadow: 2px 5px 3px rgba(255, 255, 255, 0.5);
+
 	}
 
 		#footer .inner {

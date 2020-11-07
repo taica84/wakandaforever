@@ -39,12 +39,14 @@
 				<div class="inner">
 					
 					<div class="box input"  >
-						<button id="button-mary" data-aos ="zoom-in" data-aos-delay="300">Display Gallery</button>
+						<button id="button-mary" data-aos ="fade-up" data-aos-delay="300">Display Gallery</button>
+
 						<div class="gallery-mary">
 							
 							<p>Password:<input type="password" id="input-mary" /></p>;
-							<a id="play-mary"	onclick="displayVideoListMary()" target="_blank" > <i class="fas fa-play"></i> </a>
-							
+							<a id="play-mary"	onclick="displayVideoListMary()" target="_blank" > <i class="fas fa-play"></i> </a><br>
+							<span class="incorect-password"></span>
+							<audio src="./images/teai perdut.mp3" class="perdut"></audio>
 						</div>
 					</div>
 				<!-- Boxes -->
@@ -471,10 +473,24 @@
 						</div>
 
 					</div>
-				</div>
+				</div> 
+
+			 <!-- aside --> 
+			 <aside>
+				<audio class="start-backround"  controls autoplay  loop  > 
+					<source src="./images/pages soundtrack.mp3" type="audio/mpeg" > 
+				</audio>
+				 <a href="#" class=" fas fa-volume-mute" id="toggle-audio" onclick="toggleAudio()"></a>  
+				 
+				  <!-- <i class="fas fa-volume-mute"></i>
+				  <i class="fas fa-volume-down"></i> -->
+			</aside>
+
+
 
 			<!-- Footer -->
 				<footer id="footer">
+					
                      <button id="upload-file" data-aos="fade-in" data-aos-delay="200">UPLOAD YOUR FILES</button>
                     <div class="password-fields">
 						<p>Password:<input type="password" id="passwordBoxMary" /></p>;

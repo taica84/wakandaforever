@@ -9,15 +9,14 @@
 		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" 	href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	</head>
 	<body id="top">
 		<!-- <iframe src="./images/start background.mp3" allow="autoplay" style="display:none" id="iframeAudio"> </iframe> -->
 
-         <button>
-			<audio class="start-backround"  controls autoplay  loop  > 
-				<source src="./images/start background.mp3" type="audio/mpeg" > 
-			</audio>
-	    </button>
+        
+		
+	  
 
 
 			<!-- Banner -->
@@ -27,8 +26,8 @@
 				formats to work correctly.
 			-->
 				<section id="banner" >
-					<video autoplay loop muted  playsinline class="index-photo-profile"> 
-						<source src="./images/matrix web.webm" type="video/mp4">
+					<video autoplay loop muted  playsinline poster="./images/matrix.png" class="index-photo-profile"> 
+						<source src="./images/matrix.mp4" >
 					</video>
 					
 					<div class="inner">
@@ -49,6 +48,15 @@
 					</div>
 					
 				</section>
+				<aside>
+					<audio class="start-backround"  controls autoplay  loop  > 
+						<source src="./images/start background.mp3" type="audio/mpeg" > 
+					</audio>
+					 <a href="#" class=" fas fa-volume-mute" id="toggle-audio" onclick="toggleAudio()"></a>  
+
+					  <!-- <i class="fas fa-volume-mute"></i>
+					  <i class="fas fa-volume-down"></i> -->
+				</aside>
 
 			<!-- Main -->
 

@@ -18,7 +18,7 @@ function checkPasswordMary(){
        
         return true;
     }else{
-        alert('Ce-ai fa ,te-ai perdut :)))');
+        errorAudio.play();
         return false;
     }
   
@@ -29,7 +29,7 @@ function checkPasswordTeo(){
     if(passwordText === 'blackscarlett') {
         return true;
     }else{
-        alert('Ce-ai fa ,te-ai perdut :)))');
+        errorAudio.play();
         return false;
     }
   
@@ -40,7 +40,7 @@ function checkPasswordDaria(){
     if(passwordText === 'sdm17') {
         return true;
     }else{
-        alert('Ce-ai fa ,te-ai perdut :)))');
+        errorAudio.play();
         return false;
     }
   
@@ -67,7 +67,8 @@ var buttonMary = document.getElementById('button-mary');
 //         return false
 //     }
 // });
-
+var incorectPassword =  document.querySelector('.incorect-password')
+var errorAudio = document.querySelector('.perdut')
 
 function displayVideoListMary() {
     var inputMary = document.getElementById('input-mary').value;
@@ -76,7 +77,8 @@ function displayVideoListMary() {
          galleryMary.classList.add('fading'); 
          return true;
      }else{
-         alert('Ce-ai fa, te-ai perdut :)))');
+        incorectPassword.innerHTML = 'incorrect password';
+         errorAudio.play();
          return false
      }
 }
@@ -91,7 +93,8 @@ function displayVideoListTeo() {
         galleryMary.classList.add('fading'); 
         return true;
     }else{
-        alert('Ce-ai fa, te-ai perdut :)))');
+        incorectPassword.innerHTML = 'incorrect password';
+        errorAudio.play();
         return false
     }
 }
@@ -106,7 +109,8 @@ function displayVideoListDaria() {
         galleryMary.classList.add('fading'); 
         return true;
     }else{
-        alert('Ce-ai fa, te-ai perdut:)))');
+        incorectPassword.innerHTML = 'incorrect password'
+        errorAudio.play();
         return false
     }
 }
@@ -116,7 +120,22 @@ function displayVideoListDaria() {
 
 // PLAY music backround
 
+var audio =document.querySelector('.start-backround');
+var toggleVolume = document.getElementById('toggle-audio');
+var count = 0;
 
+function toggleAudio() {
+   
+    if(count == 0) {
+        count = 1; 
+        audio.play();
+        toggleVolume.classList.replace('fa-volume-mute' , 'fa-volume-down')
+    }else {
+        count = 0;
+        audio.pause();
+        toggleVolume.classList.replace('fa-volume-down' , 'fa-volume-mute')
+    }
+}
 
 //watch video password
 // var playBtn = document.getElementById('play-button');
