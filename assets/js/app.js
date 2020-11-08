@@ -1,27 +1,27 @@
 //LOADING PAGE
 
-   let ready = false;
-   let loadedImages = 0;
-   let totalImages = 0;
-   let photosArray = [];
+//    let ready = false;
+//    let loadedImages = 0;
+//    let totalImages = 0;
+//    let photosArray = [];
 
 
 
 
-function loadingPhotos (){
-    function imageLoaded() {
-        console.log('image loaded');
-        loadedImages++;
-        console.log(loadedImages)
-        if(loadedImages === totalImages) {
-            ready = true;
-            loder.hidden = true;
+// function loadingPhotos (){
+//     function imageLoaded() {
+//         console.log('image loaded');
+//         loadedImages++;
+//         console.log(loadedImages)
+//         if(loadedImages === totalImages) {
+//             ready = true;
+//             loder.hidden = true;
             
-        }
+//         }
     
-    }
+//     }
     
-}
+// }
 
 
 

@@ -138,8 +138,10 @@
 		},2700)
 	});
       
-	  // video password
-	  
+	  // LOADING PAGE
+	  $(window).on('load' , function(){
+		  $('#loader').fadeOut('slow')
+	  })
 
 
 
